@@ -22,3 +22,17 @@ ssh-keygen -t rsa
 7. Open a new terminal window
 8. Issue command `magento2-install`
 9. Answer any questions that are presented. The only question that requires an answer is the first one. You must specify which version of Magento you'd like to install. You can press enter to accept the defaults for the remaining questions.
+
+# Docker Commands
+To stop the Docker machine, run the following command from the root of the Magento installation:
+````
+docker-compose stop
+````
+To tear down the Docker machine, run the following command from the root of the Magento installation:
+````
+docker-compose down
+````
+To spin the docker machine back up, run the following command from the root of the Magento installation:
+````
+docker-compose up -d --build
+````
